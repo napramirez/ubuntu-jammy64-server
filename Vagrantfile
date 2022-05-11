@@ -12,6 +12,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "scripts/install-tmux-xpanes.sh"
   config.vm.provision "shell", path: "scripts/install-docker.sh"
   config.vm.provision "shell", path: "scripts/install-azure-cli.sh"
+  config.vm.provision "shell", path: "scripts/install-kubectl.sh"
   config.vm.provision "shell", path: "scripts/post-provision.sh"
 
   config.vm.provider "virtualbox" do |vb|
