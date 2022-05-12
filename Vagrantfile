@@ -13,6 +13,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "scripts/install-docker.sh"
   config.vm.provision "shell", path: "scripts/install-azure-cli.sh"
   config.vm.provision "shell", path: "scripts/install-kbenv.sh"
+  config.vm.provision "shell", path: "scripts/install-helmenv.sh"
   config.vm.provision "shell", path: "scripts/install-tfenv.sh"
   config.vm.provision "shell", path: "scripts/post-provision.sh"
 
