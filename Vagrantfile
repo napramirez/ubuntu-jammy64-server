@@ -15,6 +15,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "scripts/install-kbenv.sh"
   config.vm.provision "shell", path: "scripts/install-helmenv.sh"
   config.vm.provision "shell", path: "scripts/install-tfenv.sh"
+  config.vm.provision "shell", path: "scripts/install-sops.sh"
   config.vm.provision "shell", path: "scripts/post-provision.sh"
 
   config.vm.provider "virtualbox" do |vb|
