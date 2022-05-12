@@ -8,8 +8,8 @@ apt-get update && \
         git \
         unzip
 
-export TFENV_USER=vagrant
-export TFENV_INSTALL_PATH=/home/$TFENV_USER/.tfenv
+TFENV_USER=vagrant
+TFENV_INSTALL_PATH=/home/$TFENV_USER/.tfenv
 
 rm -rf $TFENV_INSTALL_PATH && \
     sudo -u $TFENV_USER git clone https://github.com/tfutils/tfenv.git $TFENV_INSTALL_PATH

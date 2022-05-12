@@ -11,7 +11,7 @@ apt-get update && \
         lsb-release \
         gnupg
 
-export MICROSOFT_ARCHIVE_KEYRING=/etc/apt/trusted.gpg.d/microsoft.gpg
+MICROSOFT_ARCHIVE_KEYRING=/etc/apt/trusted.gpg.d/microsoft.gpg
 rm -f $MICROSOFT_ARCHIVE_KEYRING && \
     curl -sL https://packages.microsoft.com/keys/microsoft.asc \
         | gpg --dearmor -o $MICROSOFT_ARCHIVE_KEYRING
